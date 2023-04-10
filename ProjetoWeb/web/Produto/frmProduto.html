@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CadastrarProdutos</title>
+        <style type="text/css">
+        *{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+	color: white;
+}
+
+body{
+	background: linear-gradient(300deg, #191970	,#2f4f4f);
+	background-repeat: no-repeat;
+	min-height: 937px;
+	min-width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+main.container{
+	background: linear-gradient(600deg,#1C1C1C, #1C1C1C);
+	background-repeat: no-repeat;
+	min-width: 200px;
+	min-height: 250px;
+	padding: 45px;
+	box-shadow: 10px 10px 15px rgba(0,0,0, 1.0);
+	border-radius: 8px;
+}
+
+main h2{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	margin-bottom: 35px;
+}
+
+.input input{
+	background: rgba(28,28,28);
+	margin-bottom: 30px;
+	outline: none; 
+	font-size: 20px;
+	color: white;
+	height: 30px;
+	width: 300px;
+	border-radius: 3px;
+	
+}
+
+form input[type="submit"]{
+	color: black;
+	font-size: 17px;
+	border-radius: 8px;
+	padding: 5px;
+	margin-bottom: 10px; 	
+	background: white;
+}
+
+
+
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+form input[type="submit"]:hover{
+	letter-spacing: 2px;
+}
+
+.input input:focus{
+	border: 1px solid;
+	border-color: #c0c0c0;
+	border-radius: 10px;
+}
+    </style>
+    </head>
+    <body>
+        <main class="container">
+		<h2>Cadastrar</h2>
+                <form action="inserirProduto.jsp" method="POST">
+			Data de Fabricação
+			<div class="input">
+			<input type="text" id = "dtf" name="dtf" placeholder="Data de Fabricação">
+			</div>
+			Descrição
+			<div class="input">
+				<input type="text" name="desc" id="desc" placeholder="Descrição">
+			</div>
+			Data de Validade
+			<div class="input">
+				<input type="text" name="dtv" id="dtv" placeholder="Data de Validade">
+			</div>
+                        Nome
+			<div class="input">
+			<input type="text" id = "nome" name="nome" placeholder="Nome">
+			</div>
+                        Valor
+			<div class="input">
+			<input type="text" id = "val" name="val" placeholder="Valor">
+			</div>
+                        IdClassificação
+			<div class="input">
+			<input type="text" id = "idc" name="idc" placeholder="IdClassificação">
+			</div>
+                        IdEstoque
+			<div class="input">
+			<input type="text" id = "ide" name="ide" placeholder="IdEstoque">
+			</div>
+
+			<input type="submit" value="Cadastrar" id="Cadastrar">
+		</form>
+	</main>
+    </body>
+</html>
